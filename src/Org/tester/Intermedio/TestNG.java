@@ -37,6 +37,8 @@ public class TestNG {
     public void goforward(){
         driver.quit();
     }
+
+
     @Test (priority = 1)//para elegir cual quiero que se ejecute primero
     public void register(){
         driver.findElement(By.linkText("REGISTER")).click();
@@ -51,6 +53,4 @@ public class TestNG {
         ActualResult= driver.getTitle();
         Assert.assertEquals(ActualResult,ExpectedResult);
     }
-
-
 }
