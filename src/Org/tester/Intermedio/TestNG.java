@@ -23,7 +23,7 @@ public class TestNG {
 
     @BeforeMethod
     public void verifyHomePageTitle(){
-        ExpectedResult = "Welcome: Mercury Tours";
+        ExpectedResult = "Welcome: Mercury tours";
         ActualResult= driver.getTitle();
         Assert.assertEquals(ActualResult, ExpectedResult  );
     }
@@ -38,7 +38,6 @@ public class TestNG {
         driver.quit();
     }
 
-
     @Test (priority = 1)//para elegir cual quiero que se ejecute primero
     public void register(){
         driver.findElement(By.linkText("REGISTER")).click();
@@ -51,6 +50,7 @@ public class TestNG {
         driver.findElement(By.linkText("SUPPORT")).click();
         ExpectedResult = "Under Construction: Mercury tours";
         ActualResult= driver.getTitle();
+
         Assert.assertEquals(ActualResult,ExpectedResult);
     }
 }
