@@ -10,22 +10,14 @@ public class Ejemplo2_Locator {
             //Declarar variables
             String BaseUrl = "http://live.demoguru99.com/index.php/checkout/cart/";
             String actualResult = "";
-            String expectedResult = "$614.00";
+            String expectedResult = "$620.00";
             String chromePath=  System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe";
 
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
-
-            //Indicar la localización del archivo chromedriver.exe en la propiedad webdriver.chrome
-            //System.getproperty ("user.dir") = C: \..\..\..\SeleniumWebDriver
-            //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
-
             //Abrir el navegador
             driver = new ChromeDriver();
-            //Navegar a la pagina
             driver.get(BaseUrl);
             driver.manage().window().maximize();
-
-            //click en TV
             driver.findElement(By.linkText("TV")).click();
 
             //Click add to cart
@@ -41,9 +33,6 @@ public class Ejemplo2_Locator {
 
                 System.out.println("prueba fallida, el resultado: "+ actualResult + "es diferente a: "+ expectedResult );
             }
-
             driver.close();
-
         }
     }
-
