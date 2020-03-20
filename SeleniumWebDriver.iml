@@ -11,5 +11,9 @@
     <orderEntry type="library" name="Selenium3" level="project" />
     <orderEntry type="library" name="testng-6.11" level="project" />
     <orderEntry type="library" name="Selenium3.141" level="project" />
+    <orderEntry type="library" name="commonsio-2" level="project" />
+    <orderEntry type="library" name="itext-2.1" level="project" />
+    <orderEntry type="library" name="mail" level="project" />
+    <orderEntry type="library" name="testng-6" level="project" />
   </component>
 </module>
